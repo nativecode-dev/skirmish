@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.settings",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "zipcodes-regex": [
+        "core/types/types/zipcodes-regex"
+      ]
+    },
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "include": [
+    "core/*/src/**/*.ts",
+    "packages/*/src/**/*.ts"
+  ]
+}

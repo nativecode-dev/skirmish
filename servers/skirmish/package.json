@@ -1,0 +1,7 @@
+{
+  "name": "@skirmish/skirmish",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "watch": "tsc --project tsconfig.json --watch"
+  }
+}

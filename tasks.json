@@ -1,0 +1,26 @@
+{
+  "tasks": {
+    "bootstrap": [
+      "lerna bootstrap"
+    ],
+    "build": [
+      "[bootstrap]",
+      "[source:clean]",
+      "[source:format]",
+      "[source:lint]",
+      "lerna run build"
+    ],
+    "source:clean": [
+      "rimraf clients/*/lib",
+      "rimraf servers/*/lib",
+      "rimraf shared/*/lib",
+      "rimraf **/*.tsbuildinfo"
+    ],
+    "source:format": [
+      "prettier --loglevel silent --write \"servers/*/src/**/*.ts\""
+    ],
+    "source:lint": [
+      "tslint --project tsconfig.json --config tslint.json"
+    ]
+  }
+}

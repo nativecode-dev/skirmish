@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.settings",
+  "compilerOptions": {
+    "outDir": "bin",
+    "rootDir": "src"
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}
