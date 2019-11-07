@@ -125,10 +125,6 @@
         "version": "0c9ea8c2028047f39a3f66752682604f543c08be8806258c3d95c93e75a43255",
         "signature": "0c9ea8c2028047f39a3f66752682604f543c08be8806258c3d95c93e75a43255"
       },
-      "./src/index.ts": {
-        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "signature": "3835f8d92ad0699690cf572ad0da8aa3bfa5cc1c66fbd2609c52a02b9da828dc"
-      },
       "../../node_modules/@types/node/globals.d.ts": {
         "version": "6cf62fbc792aa81fa62f99dab5cc692c5315ecd5da09dd35f1ccc82778c4d5bc",
         "signature": "6cf62fbc792aa81fa62f99dab5cc692c5315ecd5da09dd35f1ccc82778c4d5bc"
@@ -312,6 +308,22 @@
       "../../node_modules/@types/node/ts3.2/index.d.ts": {
         "version": "7c7dabe6de2f88a1b4a4d9a15479c2a99b6f5864b434b9d960fc312ba9498c0a",
         "signature": "7c7dabe6de2f88a1b4a4d9a15479c2a99b6f5864b434b9d960fc312ba9498c0a"
+      },
+      "./node_modules/@types/express-serve-static-core/index.d.ts": {
+        "version": "d9e1939c6e3e20e73393c01c630a567c41b5bb3c66244600cc42adc6d4187b27",
+        "signature": "d9e1939c6e3e20e73393c01c630a567c41b5bb3c66244600cc42adc6d4187b27"
+      },
+      "./node_modules/@types/serve-static/index.d.ts": {
+        "version": "eb29e950f2120f8d3932d0f8d22b911b2ae39a1632beb55580fca8e89b627169",
+        "signature": "eb29e950f2120f8d3932d0f8d22b911b2ae39a1632beb55580fca8e89b627169"
+      },
+      "./node_modules/@types/express/index.d.ts": {
+        "version": "232c909169f7c012ab25a9df0999446ef90a6c5bc3b662dc9104546feb6597bd",
+        "signature": "232c909169f7c012ab25a9df0999446ef90a6c5bc3b662dc9104546feb6597bd"
+      },
+      "./src/index.ts": {
+        "version": "a0154c97cc65656e70169cf5ec11767b83d9bb886590e636cceff9a5eb2046ae",
+        "signature": "f667f6b1d66ba55f0dcd27f5ff050063fecfe289bad00e8c5d48344a775c1439"
       }
     },
     "options": {
@@ -520,12 +532,6 @@
         "../../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../../node_modules/typescript/lib/lib.esnext.bigint.d.ts": [
-        "../../node_modules/@types/node/fs.d.ts",
-        "../../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../../node_modules/@types/node/util.d.ts",
-        "../../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "./src/index.ts": [
         "../../node_modules/@types/node/fs.d.ts",
         "../../node_modules/@types/node/ts3.2/fs.d.ts",
         "../../node_modules/@types/node/util.d.ts",
@@ -893,6 +899,37 @@
         "../../node_modules/@types/node/ts3.2/globals.d.ts",
         "../../node_modules/@types/node/fs.d.ts",
         "../../node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/express-serve-static-core/index.d.ts": [
+        "../../node_modules/@types/node/http.d.ts",
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/ts3.2/index.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../../node_modules/@types/node/util.d.ts",
+        "../../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./node_modules/@types/serve-static/index.d.ts": [
+        "./node_modules/@types/express-serve-static-core/index.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../../node_modules/@types/node/util.d.ts",
+        "../../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./node_modules/@types/express/index.d.ts": [
+        "./node_modules/@types/express-serve-static-core/index.d.ts",
+        "./node_modules/@types/serve-static/index.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../../node_modules/@types/node/util.d.ts",
+        "../../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./src/index.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../../node_modules/@types/node/util.d.ts",
+        "../../node_modules/@types/node/ts3.2/util.d.ts"
       ]
     },
     "exportedModulesMap": {
@@ -1145,6 +1182,30 @@
         "../../node_modules/@types/node/ts3.2/globals.d.ts",
         "../../node_modules/@types/node/fs.d.ts",
         "../../node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/express-serve-static-core/index.d.ts": [
+        "../../node_modules/@types/node/http.d.ts",
+        "../../node_modules/@types/node/events.d.ts",
+        "../../node_modules/@types/node/ts3.2/index.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../../node_modules/@types/node/util.d.ts",
+        "../../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./node_modules/@types/express/index.d.ts": [
+        "./node_modules/@types/express-serve-static-core/index.d.ts",
+        "./node_modules/@types/serve-static/index.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../../node_modules/@types/node/util.d.ts",
+        "../../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./node_modules/@types/serve-static/index.d.ts": [
+        "./node_modules/@types/express-serve-static-core/index.d.ts",
+        "../../node_modules/@types/node/fs.d.ts",
+        "../../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../../node_modules/@types/node/util.d.ts",
+        "../../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../../node_modules/@types/node/async_hooks.d.ts": [
         "../../node_modules/@types/node/fs.d.ts",
@@ -1448,7 +1509,6 @@
     },
     "semanticDiagnosticsPerFile": [
       "../../node_modules/typescript/lib/lib.d.ts",
-      "./src/index.ts",
       "../../node_modules/@types/node/globals.d.ts",
       "../../node_modules/@types/node/assert.d.ts",
       "../../node_modules/@types/node/async_hooks.d.ts",
@@ -1495,6 +1555,90 @@
       "../../node_modules/@types/node/ts3.2/util.d.ts",
       "../../node_modules/@types/node/ts3.2/globals.d.ts",
       "../../node_modules/@types/node/ts3.2/index.d.ts",
+      [
+        "./node_modules/@types/express-serve-static-core/index.d.ts",
+        [
+          {
+            "file": "./node_modules/@types/express-serve-static-core/index.d.ts",
+            "start": 1266,
+            "length": 53,
+            "messageText": "Cannot find module 'express-serve-static-core/node_modules/range-parser'.",
+            "category": 1,
+            "code": 2307
+          }
+        ]
+      ],
+      [
+        "./node_modules/@types/serve-static/index.d.ts",
+        [
+          {
+            "file": "./node_modules/@types/serve-static/index.d.ts",
+            "start": 632,
+            "length": 53,
+            "messageText": "Cannot find module 'serve-static/node_modules/express-serve-static-core'.",
+            "category": 1,
+            "code": 2307
+          },
+          {
+            "file": "./node_modules/@types/serve-static/index.d.ts",
+            "start": 706,
+            "length": 32,
+            "messageText": "Cannot find module 'serve-static/node_modules/mime'.",
+            "category": 1,
+            "code": 2307
+          }
+        ]
+      ],
+      [
+        "./node_modules/@types/express/index.d.ts",
+        [
+          {
+            "file": "./node_modules/@types/express/index.d.ts",
+            "start": 598,
+            "length": 34,
+            "messageText": "Cannot find module 'express/node_modules/body-parser'.",
+            "category": 1,
+            "code": 2307
+          },
+          {
+            "file": "./node_modules/@types/express/index.d.ts",
+            "start": 663,
+            "length": 35,
+            "messageText": "Cannot find module 'express/node_modules/serve-static'.",
+            "category": 1,
+            "code": 2307
+          },
+          {
+            "file": "./node_modules/@types/express/index.d.ts",
+            "start": 723,
+            "length": 48,
+            "messageText": "Cannot find module 'express/node_modules/express-serve-static-core'.",
+            "category": 1,
+            "code": 2307
+          }
+        ]
+      ],
+      [
+        "./src/index.ts",
+        [
+          {
+            "file": "./src/index.ts",
+            "start": 141,
+            "length": 1,
+            "messageText": "Parameter '_' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./src/index.ts",
+            "start": 144,
+            "length": 8,
+            "messageText": "Parameter 'response' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          }
+        ]
+      ],
       "../../node_modules/typescript/lib/lib.es2015.d.ts",
       "../../node_modules/typescript/lib/lib.es2016.d.ts",
       "../../node_modules/typescript/lib/lib.es2017.d.ts",

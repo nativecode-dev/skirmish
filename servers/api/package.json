@@ -1,0 +1,13 @@
+{
+  "name": "@skirmish/api",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "watch": "tsc --project tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
