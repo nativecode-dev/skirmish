@@ -11,8 +11,8 @@
       "lerna run build"
     ],
     "source:clean": [
-      "rimraf clients/*/lib",
-      "rimraf servers/*/lib",
+      "rimraf clients/*/bin",
+      "rimraf servers/*/bin",
       "rimraf shared/*/lib",
       "rimraf **/*.tsbuildinfo"
     ],
