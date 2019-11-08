@@ -42,6 +42,6 @@ release:
     - master
   script:
     - npm run build
-    - .citools/lerna-publish release
+    # - .citools/lerna-publish release
   variables:
     GIT_SUBMODULE_STRATEGY: recursive
