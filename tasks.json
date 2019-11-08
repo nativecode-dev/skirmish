@@ -24,7 +24,9 @@
       "jsonsort */*/*.json"
     ],
     "source:format": [
-      "prettier --loglevel silent --write \"servers/*/src/**/*.ts\""
+      "prettier --loglevel silent --write \"clients/*/src/**/*.ts\"",
+      "prettier --loglevel silent --write \"servers/*/src/**/*.ts\"",
+      "prettier --loglevel silent --write \"shared/*/src/**/*.ts\""
     ],
     "source:lint": [
       "tslint --project tsconfig.json --config tslint.json"
@@ -32,6 +34,18 @@
     "test": [
       "[build]",
       "nyc mocha --opts mocha.opts"
+    ],
+    "publish:canary": [
+      "[build:ci]",
+      ".citools/lerna-publish canary"
+    ],
+    "publish:prerelease": [
+      "[build:ci]",
+      ".citools/lerna-publish prerelease"
+    ],
+    "publish:release": [
+      "[build:ci]",
+      ".citools/lerna-publish release"
     ]
   }
 }

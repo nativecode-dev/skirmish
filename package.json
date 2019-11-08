@@ -17,7 +17,10 @@
     "build": "cli-tasks build",
     "lerna": "lerna",
     "task": "cli-tasks",
-    "test": "cli-tasks test"
+    "test": "cli-tasks test",
+    "publish:canary": "cli-tasks canary",
+    "publish:prerelease": "cli-tasks prerelease",
+    "publish:release": "cli-tasks release"
   },
   "devDependencies": {
     "@nofrills/tasks": "^9.0.2",
