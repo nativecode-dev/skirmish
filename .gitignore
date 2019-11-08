@@ -1,3 +1,7 @@
+.cache/
+bin/
+dist/
+lib/
 *.tsbuildinfo
 
 # Logs

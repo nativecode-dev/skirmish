@@ -1,0 +1,50 @@
+image: nativecode/node-build
+
+stages:
+  - build
+  - publish
+
+continuous:
+  stage: build
+  artifacts:
+    paths:
+      - node_modules
+  script:
+    - npm install
+    - npm test
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+
+canary:
+  stage: publish
+  only:
+    - feature/*
+    - fix/*
+  script:
+    - npm install
+    - npm run build
+    - .citools/lerna-publish canary
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+
+prerelease:
+  stage: publish
+  only:
+    - develop
+  script:
+    - npm install
+    - npm run build
+    - .citools/lerna-publish prerelease
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+
+release:
+  stage: publish
+  only:
+    - master
+  script:
+    - npm install
+    - npm run build
+    - .citools/lerna-publish release
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
