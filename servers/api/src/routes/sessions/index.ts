@@ -9,10 +9,10 @@ import putItem from './put'
 
 export default function(app: Application): Application {
   return app
-    .get('/users', getItems)
-    .get('/users/{id}', getItem)
-    .delete('/users', deleteItem)
-    .patch('/users', patchItem)
-    .post('/users', postItem)
-    .put('/users', putItem)
+    .get('/sessions', getItems)
+    .get('/sessions/{id}', getItem)
+    .delete('/sessions', deleteItem)
+    .patch('/sessions', patchItem)
+    .post('/sessions', postItem)
+    .put('/sessions', putItem)
 }
