@@ -1,6 +1,6 @@
 {
   "name": "@skirmish/cli",
-  "version": "0.0.1-next.0",
+  "version": "0.0.1-next.1",
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "upgrade": "npm-check -y",
@@ -9,6 +9,6 @@
   "dependencies": {
     "@nofrills/lincoln": "^6.0.0",
     "@nofrills/lincoln-debug": "^6.0.0",
-    "@skirmish/core": "^0.0.1-next.0"
+    "@skirmish/core": "^0.0.1-next.1"
   }
 }
