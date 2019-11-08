@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "build": "tsc --project tsconfig.json",
+    "serve": "ts-node src/main.ts",
     "watch": "tsc --project tsconfig.json --watch"
   },
   "dependencies": {

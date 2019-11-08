@@ -1,5 +1,8 @@
 {
   "commands": {
+    "run": {
+      "stream": true
+    },
     "publish": {
       "conventionalCommits": true,
       "ignoreChanges": [
