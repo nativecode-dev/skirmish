@@ -1,10 +1,10 @@
 {
   "name": "@skirmish/cli",
+  "version": "0.0.0",
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "watch": "tsc --project tsconfig.json --watch"
   },
   "dependencies": {},
-  "devDependencies": {},
-  "version": "0.0.0"
+  "devDependencies": {}
 }

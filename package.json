@@ -15,9 +15,9 @@
   "main": "index.js",
   "scripts": {
     "build": "cli-tasks build",
+    "canary": "cli-tasks publish:canary",
     "commit": "cli-tasks commit",
     "lerna": "lerna",
-    "canary": "cli-tasks publish:canary",
     "pre-release": "cli-tasks publish:prerelease",
     "release": "cli-tasks publish:release",
     "task": "cli-tasks",

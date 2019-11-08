@@ -1,4 +1,15 @@
 {
+  "commands": {
+    "publish": {
+      "conventionalCommits": true,
+      "ignoreChanges": [
+        "package.json",
+        "package-lock.json"
+      ],
+      "message": "[skip ci] chore: publish",
+      "yes": true
+    }
+  },
   "packages": [
     "clients/*",
     "servers/*",
