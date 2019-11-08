@@ -21,7 +21,6 @@ canary:
     - feature/*
     - fix/*
   script:
-    - npm install
     - npm run build
     - .citools/lerna-publish canary
   variables:
@@ -32,7 +31,6 @@ prerelease:
   only:
     - develop
   script:
-    - npm install
     - npm run build
     - .citools/lerna-publish prerelease
   variables:
@@ -43,7 +41,6 @@ release:
   only:
     - master
   script:
-    - npm install
     - npm run build
     - .citools/lerna-publish release
   variables:
