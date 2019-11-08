@@ -10,11 +10,18 @@
       "[source:lint]",
       "lerna run build"
     ],
+    "build:ci": [
+      ".citools/setup-git ${BUILD_REPO_BRANCH} ${BUILD_REPO_GIT} ${BUILD_REPO_EMAIL}",
+      ".citools/setup-ssh ${BUILD_REPO_DOMAIN} ${BUILD_REPO_SSHKEY_PATH} ${BUILD_REPO_DOMAIN_SSH}",
+      "[build]"
+    ],
     "source:clean": [
       "rimraf clients/*/bin",
       "rimraf servers/*/bin",
       "rimraf shared/*/lib",
-      "rimraf **/*.tsbuildinfo"
+      "rimraf **/*.tsbuildinfo",
+      "jsonsort *.json",
+      "jsonsort */*/*.json"
     ],
     "source:format": [
       "prettier --loglevel silent --write \"servers/*/src/**/*.ts\""

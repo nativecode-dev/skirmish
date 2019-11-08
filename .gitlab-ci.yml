@@ -21,8 +21,8 @@ canary:
     - feature/*
     - fix/*
   script:
-    - npm run build
-    - .citools/lerna-publish canary
+    - source .ci-env.sh
+    - npm run task -- publish:canary
   variables:
     GIT_SUBMODULE_STRATEGY: recursive
 
@@ -31,8 +31,8 @@ prerelease:
   only:
     - develop
   script:
-    - npm run build
-    - .citools/lerna-publish prerelease
+    - source .ci-env.sh
+    - npm run task -- publish:prerelease
   variables:
     GIT_SUBMODULE_STRATEGY: recursive
 
@@ -41,7 +41,7 @@ release:
   only:
     - master
   script:
-    - npm run build
-    # - .citools/lerna-publish release
+    - source .ci-env.sh
+    - npm run task -- publish:release
   variables:
     GIT_SUBMODULE_STRATEGY: recursive

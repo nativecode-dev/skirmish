@@ -2,23 +2,23 @@
   "name": "skirmish",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "lerna": "lerna",
-    "tasks": "cli-tasks",
-    "build": "cli-tasks build",
-    "test": "cli-tasks test"
-  },
+  "license": "GPL-3.0-or-later",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mikepham/skirmish.git"
   },
-  "author": "",
-  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/mikepham/skirmish/issues"
   },
   "homepage": "https://github.com/mikepham/skirmish#readme",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cli-tasks build",
+    "lerna": "lerna",
+    "task": "cli-tasks",
+    "test": "cli-tasks test"
+  },
   "devDependencies": {
     "@nofrills/tasks": "^9.0.2",
     "@types/chai": "^4.2.4",
