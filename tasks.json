@@ -15,6 +15,18 @@
       ".citools/setup-ssh ${BUILD_REPO_DOMAIN} ${BUILD_REPO_SSHKEY_PATH} ${BUILD_REPO_DOMAIN_SSH}",
       "[build]"
     ],
+    "publish:canary": [
+      "[build:ci]",
+      ".citools/lerna-publish canary"
+    ],
+    "publish:prerelease": [
+      "[build:ci]",
+      ".citools/lerna-publish prerelease"
+    ],
+    "publish:release": [
+      "[build:ci]",
+      ".citools/lerna-publish release"
+    ],
     "source:clean": [
       "rimraf clients/*/bin",
       "rimraf servers/*/bin",
@@ -34,18 +46,6 @@
     "test": [
       "[build]",
       "nyc mocha --opts mocha.opts"
-    ],
-    "publish:canary": [
-      "[build:ci]",
-      ".citools/lerna-publish canary"
-    ],
-    "publish:prerelease": [
-      "[build:ci]",
-      ".citools/lerna-publish prerelease"
-    ],
-    "publish:release": [
-      "[build:ci]",
-      ".citools/lerna-publish release"
     ]
   }
 }

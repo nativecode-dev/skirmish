@@ -1,6 +1,6 @@
 import express from 'express'
 
-const PORT: number = process.env.PORT ? parseInt(process.env.PORT) : 80
+const PORT: number = process.env.PORT ? parseInt(process.env.PORT, 0) : 80
 
 const app = express()
 
