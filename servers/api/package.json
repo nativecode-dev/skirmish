@@ -1,6 +1,6 @@
 {
   "name": "@skirmish/api",
-  "version": "0.0.1-next.1",
+  "version": "0.0.1-next.2",
   "main": "bin/main.js",
   "scripts": {
     "build": "tsc --project tsconfig.json",
