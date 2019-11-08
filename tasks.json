@@ -15,6 +15,10 @@
       ".citools/setup-ssh ${BUILD_REPO_DOMAIN} ${BUILD_REPO_SSHKEY_PATH} ${BUILD_REPO_DOMAIN_SSH}",
       "[build]"
     ],
+    "commit": [
+      "git add -A .",
+      "npx git-cz"
+    ],
     "publish:canary": [
       "[build:ci]",
       ".citools/lerna-publish canary"
