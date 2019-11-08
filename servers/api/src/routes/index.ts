@@ -1,9 +1,13 @@
-import { Application } from 'express-serve-static-core'
+import { Application } from 'express'
+
+import Users from './users'
 
 const register = (app: Application): Application => {
-  return app.get('/', (request, response) => {
+  app.get('/', (request, response) => {
     response.sendStatus(200)
   })
+
+  return Users(app)
 }
 
 export default register

@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "bin",
+    "outDir": "lib",
     "rootDir": "src"
   },
   "extends": "../../tsconfig.settings",

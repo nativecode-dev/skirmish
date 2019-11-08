@@ -1,8 +1,14 @@
 {
-  "name": "@skirmish/mesages",
+  "name": "@skirmish/messages",
   "version": "0.0.1-next.0",
+  "main": "lib/index.js",
   "scripts": {
     "build": "tsc --project tsconfig.json",
+    "upgrade": "npm-check -y",
     "watch": "tsc --project tsconfig.json --watch"
+  },
+  "types": "lib/index.d.ts",
+  "dependencies": {
+    "@nofrills/lincoln-debug": "^6.0.0"
   }
 }

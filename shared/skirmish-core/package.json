@@ -1,5 +1,5 @@
 {
-  "name": "@skirmish/documents",
+  "name": "@skirmish/core",
   "version": "0.0.1-next.0",
   "main": "lib/index.js",
   "scripts": {
@@ -10,6 +10,9 @@
   "types": "lib/index.d.ts",
   "dependencies": {
     "@nofrills/lincoln-debug": "^6.0.0",
-    "@skirmish/core": "^0.0.1-next.0"
+    "pouchdb": "^7.1.1"
+  },
+  "devDependencies": {
+    "@types/pouchdb": "^6.4.0"
   }
 }

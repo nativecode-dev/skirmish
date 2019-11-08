@@ -1,8 +1,5 @@
 {
-  "commands": {
-    "run": {
-      "stream": true
-    },
+  "command": {
     "publish": {
       "conventionalCommits": true,
       "ignoreChanges": [
@@ -11,6 +8,9 @@
       ],
       "message": "[skip ci] chore: publish",
       "yes": true
+    },
+    "run": {
+      "stream": true
     }
   },
   "packages": [
