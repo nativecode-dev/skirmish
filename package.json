@@ -17,9 +17,9 @@
     "build": "cli-tasks build",
     "commit": "cli-tasks commit",
     "lerna": "lerna",
-    "publish:canary": "cli-tasks canary",
-    "publish:prerelease": "cli-tasks prerelease",
-    "publish:release": "cli-tasks release",
+    "canary": "cli-tasks publish:canary",
+    "pre-release": "cli-tasks publish:prerelease",
+    "release": "cli-tasks publish:release",
     "task": "cli-tasks",
     "test": "cli-tasks test"
   },

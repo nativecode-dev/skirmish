@@ -22,7 +22,7 @@ canary:
     - fix/*
   script:
     - source .ci-env.sh
-    - npm run publish:canary
+    - npm run canary
   variables:
     GIT_SUBMODULE_STRATEGY: recursive
 
@@ -32,7 +32,7 @@ prerelease:
     - develop
   script:
     - source .ci-env.sh
-    - npm run publish:prerelease
+    - npm run pre-release
   variables:
     GIT_SUBMODULE_STRATEGY: recursive
 
@@ -42,6 +42,6 @@ release:
     - master
   script:
     - source .ci-env.sh
-    - npm run publish:release
+    - npm run release
   variables:
     GIT_SUBMODULE_STRATEGY: recursive
